@@ -7,6 +7,7 @@ def main(command, text):
     my_out = result.stdout
     print(my_out)
     print('*' * 50)
+    my_out = my_out.replace('_', ' ')
     clean_out = re.sub(r'[^\w\s]', ' ', my_out)
     print(clean_out)
     print('*' * 50)
