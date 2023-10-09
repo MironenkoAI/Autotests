@@ -14,6 +14,7 @@ def test_step1():
 def test_step2():
     assert checkout("cat /etc/os-release", "22.04.1"), "test2 FAIL"
 
+
 def test_step3():
     assert checkout("cat /etc/os-release", "NAME"), "test3 FAIL"
 
