@@ -1,17 +1,9 @@
 # Задание 1:
 # Дополнить проект тестами, проверяющими команды вывода списка файлов (l) и разархивирования с путями (x).
-import subprocess
+from checkers import checkout
 
 folder_out = "/home/user/folder_out/"
 folder_ext = "/home/user/folder_ext/"
-
-
-def checkout(cmd, text):
-    result = subprocess.run(cmd, shell=True, stdout=subprocess.PIPE, encoding='utf-8')
-    if text in result.stdout and result.returncode == 0:
-        return True
-    else:
-        return False
 
 
 # показать файлы в папке не запуская
